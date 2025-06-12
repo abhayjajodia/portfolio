@@ -1,0 +1,37 @@
+.nav-link {
+    position: relative;
+}
+        
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.3s ease;
+}
+        
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link1::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.9s ease;
+}
+        
+.nav-link1:hover::after {
+    width: 100%;
+}
+
+.nav-link1 {
+    position: relative;
+}
