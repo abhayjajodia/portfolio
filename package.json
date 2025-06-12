@@ -2,12 +2,14 @@
   "name": "myportfolio",
   "private": true,
   "version": "0.0.0",
-
+  "homepage":"https://github/abhayjajodia/portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    
+    "deploy": "vite build && vite preview",
+    "start": "vite",
+    "gh-pages": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
