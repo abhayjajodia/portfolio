@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
-import ProfilePic from '../../../assets/profile.jpg'
+import ProfilePic from '/profile.jpg'
 import fileSaver from 'file-saver';
+import cv from '../../../assets/ABHAY_JAJODIA-RESUME.pdf';
+import data from '../../../assets/about.txt';
 
 export default function About() {
 
@@ -18,12 +20,12 @@ const experience = [
 ]
 
 const saveFile = ()=> {
-    fileSaver.saveAs('/ABHAY_JAJODIA-RESUME.pdf', 'cv.pdf');
+    fileSaver.saveAs(cv, 'cv.pdf');
 };
 
 useEffect(() => {
 let fetchData = async () => {
-    const response = await fetch('/about.txt');
+    const response = await fetch(data);
     const final = await response.text();
     setAboutText(final);
 }

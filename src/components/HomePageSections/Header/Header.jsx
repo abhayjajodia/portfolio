@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ProfilePic from '../../../assets/profile.jpg'
+import ProfilePic from '/profile.jpg'
+import TextAnimation from '../../TextAnimation/TextAnimation';
 import './Header.css'
 
 import { faGamepad, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +13,7 @@ function Header() {
             <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 mb-12 md:mb-0">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                        <span className="gradient-text">Web Developer</span><br />
+                        <span className="gradient-text"><TextAnimation/></span><br />
                         <span className="text-white">Creating Immersive Experiences</span>
                     </h1>
                     <p className="text-lg text-slate-300 mb-8 max-w-lg">
