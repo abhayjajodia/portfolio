@@ -2,7 +2,7 @@
   "name": "myportfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github/abhayjajodia/portfolio",
+  "homepage": "/portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
