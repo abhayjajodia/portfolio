@@ -1,15 +1,15 @@
 {
-  "name": "myportfolio",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "/portfolio",
+  "homepage": "https://github/abhayjajodia/portfolio",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
     "dev": "vite",
     "build": "vite build",
-    "deploy":"vite build && gh-pages -d dist",
+    "deploy":"gh pages -d dist",
     "start": "vite",
-    "gh-pages": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
